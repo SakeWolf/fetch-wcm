@@ -1,0 +1,21 @@
+{
+  "name": "starpower-fm",
+  "version": "0.0.0",
+  "description": "Blogging server for my personal music-related meanderings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SakeWolf/starpower-fm.git"
+  },
+  "author": "Kevin Lin <klin807@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SakeWolf/starpower-fm/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
+  }
+}
