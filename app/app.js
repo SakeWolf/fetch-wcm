@@ -7,7 +7,7 @@ app.get('/', function (request, response) {
 	response.render('index', {title: 'StarpowerFM', message: 'hOI! i\'m hTML!'});
 });
 
-var blog = require('./routes/blog');
-app.use('/blog', blog);
+var reviews = require('./routes/reviews');
+app.use('/reviews', reviews);
 
 module.exports = app;
