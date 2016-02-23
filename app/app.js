@@ -10,4 +10,7 @@ app.get('/', function (request, response) {
 var reviews = require('./routes/reviews');
 app.use('/reviews', reviews);
 
+var fetch = require('./routes/fetch');
+app.use('/fetch', fetch);
+
 module.exports = app;
