@@ -54,4 +54,14 @@ app.get('/', function (request, response) {
 	response.render('index', {title: 'Wolf Chords', message: 'hOI! i\'m hTML!'});
 });
 
+app.get('/notfound', function (request, response) {
+	response.render('notfound', {});
+});
+
+app.use(function (request, response) {
+	response.status(404);
+	response.render('notfound', {});
+});
+
+
 module.exports = app;
