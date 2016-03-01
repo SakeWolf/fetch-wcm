@@ -38,6 +38,7 @@ passport.deserializeUser(function (user, done) {
 	done(null, user);
 });
 
+app.use(express.static('assets'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
 	secret: 'guitar dog',

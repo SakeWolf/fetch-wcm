@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,EAAG;EACF,WAAW,EAHE,qBAAqB",
+"sources": ["../../sass/fetch.scss"],
+"names": [],
+"file": "fetch.css"
+}
