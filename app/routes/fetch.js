@@ -14,7 +14,7 @@ router.use('/hub', isAuthenticated);
 
 router.route('/')
 .get(function (request, response) {
-	response.render('fetchlogin', {});
+	response.render('fetchlogin', {title: 'Wolf Chords - Fetch Login'});
 })
 .post(
 	passport.authenticate('local', {successRedirect: '/fetch/hub', failureRedirect: '/fetch'})
@@ -22,7 +22,7 @@ router.route('/')
 
 router.route('/hub')
 .get(function (request, response) {
-	response.render('fetchhub', {});
+	response.render('fetchhub', {title: 'Wolf Chords - Fetch Hub'});
 });
 
 

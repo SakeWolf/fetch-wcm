@@ -52,11 +52,11 @@ app.use('/reviews', reviews);
 app.use('/fetch', fetch);
 
 app.get('/', function (request, response) {
-	response.render('index', {title: 'Wolf Chords', message: 'hOI! i\'m hTML!'});
+	response.render('index', {title: 'Wolf Chords - Home', message: 'hOI! i\'m hTML!'});
 });
 
 app.get('/notfound', function (request, response) {
-	response.render('notfound', {});
+	response.render('notfound', {title: 'Wolf Chords - Not Found'});
 });
 
 app.use(function (request, response) {
