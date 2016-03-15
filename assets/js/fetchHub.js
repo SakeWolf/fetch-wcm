@@ -13,7 +13,7 @@
 	app.factory('HubService', ['$http', function ($http) {
 		return {
 			parseAll: function() {
-				return $http.get('/fetch/all');
+				return $http.get('/all');
 			}
 		};
 	}]);
