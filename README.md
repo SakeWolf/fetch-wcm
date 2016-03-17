@@ -1,2 +1,2 @@
-# wolf-chords
-Blogging server for my personal music-related meanderings.
+# fetch-wcm
+Blogging server for my various non-technical pursuits.
