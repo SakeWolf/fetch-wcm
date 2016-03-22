@@ -1,16 +1,16 @@
 extend layout
 block content
 	div(ng-app="fetchHub")
-		div(ng-controller="HubController as hub", ng-init="loadAll()")
+		div(id="frame", ng-controller="HubController as hub", ng-init="loadAll()")
 			h1 Fetch Hub
 			select(name='entry-type')
 				option(value='all') All
 				option(value='reviews') Reviews
 				option(value='articles') Articles
-			button(type='button') New
-			button(type='button') Delete
-			div(id='entry-list', ng-repeat="entry in entries")
-				div(class='entry')
+			a(href="#") New
+			a(href="#") Delete
+			div(id='entry-list')
+				div(class='entry', ng-repeat="entry in entries")
 					p {{entry.title}} ({{entry.createdOn}})
 	script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js")
 	script(src="/js/fetchHub.js")

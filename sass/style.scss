@@ -4,14 +4,31 @@ h1 {
 	font-family: $header-font;
 }
 
-.entry-list {
-	width: 100%;
-	height: 100%;
-	border: 1px solid #000000;
+#frame {
+	margin-left: 2.5%;
+	width: 95%;
+	a {
+		padding: 0.25em;
+		margin-left: 1%;
+		border-radius: 0.25em;
+		background-color: #BBBBBB;
+	}
 }
 
 .entry {
 	width: 100%;
 	height: 100%;
-	border: 1px solid #AAAAAA;
+	&:nth-of-type(odd) {
+		background-color: #EFEFEF;
+	}
+	p {
+		padding: 0.5em;
+		margin: 0;
+	}
+}
+
+#entry-list {
+	margin-top: 1%;
+	width: 100%;
+	border: 1px solid #000000;
 }
